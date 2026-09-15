@@ -3,177 +3,277 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Izhaan & Azlan - Birthday Invitation</title>
+<title>Izhaan & Azlan Birthday Celebration</title>
+
 <style>
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #245c3b, #07160d 70%);
+  background: linear-gradient(135deg, #062e1b, #0b5d36);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.card {
-  width: 100%;
-  max-width: 520px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid #d9b45b;
-  border-radius: 28px;
-  padding: 35px 25px;
   text-align: center;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
 }
+
+.card {
+  max-width: 520px;
+  margin: 25px auto;
+  background: #fffdf5;
+  color: #123b25;
+  border-radius: 28px;
+  padding: 28px 20px 30px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.35);
+  overflow: hidden;
+}
+
+.ball {
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
 .small {
-  color: #f0d58a;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-size: 13px;
   font-weight: bold;
+  color: #286b45;
 }
-.ball {
-  font-size: 50px;
-  margin: 15px 0;
-}
+
 h1 {
-  margin: 5px 0;
+  margin: 8px 0;
   font-size: 42px;
-  color: #f4d477;
-  text-transform: uppercase;
+  color: #0b6137;
+  line-height: 1.05;
 }
-h2 {
-  margin: 8px 0 25px;
-  font-size: 17px;
-  letter-spacing: 3px;
-  font-weight: normal;
+
+.names {
+  font-size: 32px;
+  font-weight: 900;
+  color: #bd2d2d;
+  margin: 15px 0 5px;
 }
-.message {
-  font-size: 17px;
-  line-height: 1.6;
+
+.and {
+  color: #174d30;
 }
-.details {
-  display: grid;
-  gap: 12px;
-  margin-top: 25px;
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
 }
-.detail {
-  background: rgba(0,0,0,0.25);
-  border: 1px solid rgba(217,180,91,0.5);
+
+.cricket {
+  background: #0b6137;
+  color: white;
   border-radius: 16px;
+  padding: 13px;
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.details {
+  background: #f1f6ed;
+  border-radius: 18px;
+  padding: 18px 12px;
+  margin: 18px 0;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.details strong {
+  color: #0b6137;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+button, .button {
+  border: none;
+  text-decoration: none;
   padding: 15px;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
 }
-.label {
-  color: #e7c96d;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 6px;
+
+.rsvp {
+  background: #c62828;
+  color: white;
 }
-.value {
+
+.location {
+  background: #0b6137;
+  color: white;
+}
+
+.music {
+  background: #d59b18;
+  color: white;
+}
+
+.note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 18px;
+}
+
+.footer {
+  margin-top: 22px;
   font-size: 18px;
   font-weight: bold;
-  line-height: 1.4;
+  color: #0b6137;
 }
-.button {
-  display: inline-block;
-  margin-top: 22px;
-  padding: 14px 28px;
-  border-radius: 30px;
-  background: #d9b45b;
-  color: #102719;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-.rsvp {
-  margin-top: 30px;
-  padding: 22px 15px;
-  border-radius: 20px;
-  background: rgba(0,0,0,0.25);
-  border: 1px solid rgba(217,180,91,0.5);
-}
-.rsvp h3 {
-  margin: 0 0 8px;
-  color: #f4d477;
-  font-size: 24px;
-}
-.rsvp p {
-  margin: 0;
-  line-height: 1.5;
-  font-size: 15px;
-}
-.rsvp-button {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 14px 30px;
-  border-radius: 30px;
-  background: #ffffff;
-  color: #173b25;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-.footer {
-  margin-top: 25px;
-  color: #d8d8d8;
-  font-size: 13px;
+
+.grass {
+  font-size: 30px;
+  margin-top: 12px;
 }
 </style>
 </head>
+
 <body>
+
 <div class="card">
-  <div class="small">YOU'RE INVITED</div>
-  <div class="ball">🏏🏏</div>
-  <h1>Izhaan &amp; Azlan</h1>
-  <h2>BIRTHDAY CELEBRATION</h2>
-  <p class="message">
-    Come join us for a fun-filled birthday celebration
-    with lots of cricket, laughter and happy moments!
-  </p>
+
+  <div class="ball">🏏 🏏</div>
+
+  <div class="small">YOU'RE INVITED TO</div>
+
+  <h1>BIRTHDAY<br>CELEBRATION</h1>
+
+  <div class="names">
+    IZHAAN <span class="and">&</span> AZLAN
+  </div>
+
+  <div class="subtitle">
+    🎉 Our Little Cricket Champs 🎉
+  </div>
+
+  <div class="cricket">
+    🏏 CRICKET THEME 🏏
+  </div>
+
   <div class="details">
-    <div class="detail">
-      <div class="label">Date</div>
-      <div class="value">24 October</div>
-    </div>
-    <div class="detail">
-      <div class="label">Time</div>
-      <div class="value">7:00 PM</div>
-    </div>
-    <div class="detail">
-      <div class="label">Venue</div>
-      <div class="value">
-        Milton Memorial Arena<br>
-        Milton Lions Club Hall (2nd Floor)
-      </div>
-    </div>
+    📅 <strong>24 October</strong><br>
+    🕖 <strong>7:00 PM</strong><br><br>
+
+    📍 <strong>Milton Memorial Arena</strong><br>
+    Milton Lions Club Hall<br>
+    2nd Floor
   </div>
-  <a
-    class="button"
-    href="https://www.google.com/maps/search/?api=1&query=Milton+Memorial+Arena+Milton+Ontario"
-    target="_blank">
-    📍 View Location
-  </a>
-  <div class="rsvp">
-    <h3>💌 RSVP</h3>
-    <p>
-      Please let us know if you can join us!
-      <br>
-      Kindly confirm your attendance.
-    </p>
+
+  <div class="buttons">
+
     <a
-      class="rsvp-button"
-      href="YOUR_GOOGLE_FORM_LINK_HERE"
+      class="button rsvp"
+      href="https://forms.gle/4cu7HJAwqQkiePei7"
       target="_blank">
-      ✅ Confirm Attendance
+      💌 Confirm Attendance
     </a>
+
+    <a
+      class="button location"
+      href="https://www.google.com/maps/search/?api=1&query=Milton+Memorial+Arena+Milton+Ontario"
+      target="_blank">
+      📍 View Location
+    </a>
+
+    <button class="music" onclick="playCricketMusic()">
+      🎵 Play Cricket Music
+    </button>
+
   </div>
+
+  <div class="note">
+    Tap the music button to enjoy a little cricket-style birthday tune! 🏏🎵
+  </div>
+
   <div class="footer">
-    We can't wait to celebrate with you! 🏏🎉
+    We can't wait to celebrate with you! ❤️
   </div>
+
+  <div class="grass">
+    🌿🏏🌿🏏🌿
+  </div>
+
 </div>
+
+<script>
+let audioContext;
+let playing = false;
+let timers = [];
+
+function playCricketMusic() {
+
+  if (playing) {
+    timers.forEach(t => clearTimeout(t));
+    playing = false;
+    return;
+  }
+
+  playing = true;
+
+  audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+  const notes = [
+    523.25, 659.25, 783.99, 659.25,
+    587.33, 698.46, 880.00, 783.99,
+    659.25, 783.99, 987.77, 783.99
+  ];
+
+  notes.forEach((freq, i) => {
+
+    const timer = setTimeout(() => {
+
+      if (!playing) return;
+
+      const osc = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+
+      osc.type = "triangle";
+      osc.frequency.value = freq;
+
+      gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(
+        0.16,
+        audioContext.currentTime + 0.03
+      );
+
+      gain.gain.exponentialRampToValueAtTime(
+        0.0001,
+        audioContext.currentTime + 0.35
+      );
+
+      osc.connect(gain);
+      gain.connect(audioContext.destination);
+
+      osc.start();
+      osc.stop(audioContext.currentTime + 0.4);
+
+    }, i * 420);
+
+    timers.push(timer);
+  });
+
+  const repeat = setTimeout(() => {
+    playing = false;
+    playCricketMusic();
+  }, notes.length * 420 + 700);
+
+  timers.push(repeat);
+}
+</script>
+
 </body>
 </html>
