@@ -3,277 +3,335 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Izhaan & Azlan Birthday Celebration</title>
-
+<title>Izhaan & Azlan | Birthday Celebration</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #062e1b, #0b5d36);
-  color: white;
-  text-align: center;
-}
-
-.card {
-  max-width: 520px;
-  margin: 25px auto;
-  background: #fffdf5;
-  color: #123b25;
-  border-radius: 28px;
-  padding: 28px 20px 30px;
-  box-shadow: 0 12px 35px rgba(0,0,0,.35);
-  overflow: hidden;
-}
-
-.ball {
-  font-size: 55px;
-  margin-bottom: 5px;
-}
-
-.small {
-  letter-spacing: 3px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #286b45;
-}
-
-h1 {
-  margin: 8px 0;
-  font-size: 42px;
-  color: #0b6137;
-  line-height: 1.05;
-}
-
-.names {
-  font-size: 32px;
-  font-weight: 900;
-  color: #bd2d2d;
-  margin: 15px 0 5px;
-}
-
-.and {
-  color: #174d30;
-}
-
-.subtitle {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.cricket {
-  background: #0b6137;
-  color: white;
-  border-radius: 16px;
-  padding: 13px;
-  margin: 18px 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.details {
-  background: #f1f6ed;
-  border-radius: 18px;
-  padding: 18px 12px;
-  margin: 18px 0;
-  line-height: 1.8;
-  font-size: 18px;
-}
-
-.details strong {
-  color: #0b6137;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 22px;
-}
-
-button, .button {
-  border: none;
-  text-decoration: none;
-  padding: 15px;
-  border-radius: 14px;
-  font-size: 17px;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-}
-
-.rsvp {
-  background: #c62828;
-  color: white;
-}
-
-.location {
-  background: #0b6137;
-  color: white;
-}
-
-.music {
-  background: #d59b18;
-  color: white;
-}
-
-.note {
-  font-size: 13px;
-  color: #666;
-  margin-top: 18px;
-}
-
-.footer {
-  margin-top: 22px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #0b6137;
-}
-
-.grass {
-  font-size: 30px;
-  margin-top: 12px;
-}
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background:
+            radial-gradient(circle at top, #176b3a 0%, #073b22 45%, #021d11 100%);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .card {
+        width: 100%;
+        max-width: 520px;
+        background: #fffdf5;
+        color: #123b25;
+        border-radius: 28px;
+        overflow: hidden;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+        text-align: center;
+        position: relative;
+    }
+    .top {
+        background: linear-gradient(135deg, #075c2c, #159447);
+        padding: 30px 20px 25px;
+        position: relative;
+    }
+    .top:after {
+        content: "🏏  ⚾  🏏";
+        display: block;
+        font-size: 38px;
+        margin-top: 14px;
+        letter-spacing: 8px;
+    }
+    .small-title {
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color: #f7e7a7;
+        margin-bottom: 10px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 38px;
+        line-height: 1.05;
+        color: white;
+        letter-spacing: 1px;
+    }
+    .celebration {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffe9a6;
+        letter-spacing: 2px;
+    }
+    .content {
+        padding: 28px 25px 30px;
+    }
+    .message {
+        font-size: 17px;
+        line-height: 1.6;
+        color: #3f4f45;
+        margin: 0 auto 24px;
+    }
+    .champ {
+        display: inline-block;
+        background: #e9f6ed;
+        color: #09652f;
+        padding: 9px 16px;
+        border-radius: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    .details {
+        background: #f3f8f0;
+        border-radius: 20px;
+        padding: 20px 15px;
+        margin-bottom: 22px;
+    }
+    .detail {
+        margin: 13px 0;
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    .detail strong {
+        display: block;
+        color: #075c2c;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    .button {
+        display: block;
+        text-decoration: none;
+        border-radius: 14px;
+        padding: 15px 20px;
+        font-size: 17px;
+        font-weight: bold;
+        transition: transform 0.15s ease;
+    }
+    .button:active {
+        transform: scale(0.97);
+    }
+    .rsvp {
+        background: #087a39;
+        color: white;
+        box-shadow: 0 7px 18px rgba(8,122,57,0.25);
+    }
+    .location {
+        background: #f0c84b;
+        color: #183c25;
+    }
+    .footer {
+        margin-top: 25px;
+        font-size: 13px;
+        color: #718078;
+    }
+    /* Music overlay */
+    #musicOverlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 25, 14, 0.88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        z-index: 9999;
+        transition: opacity 0.4s ease;
+    }
+    #musicBox {
+        width: 100%;
+        max-width: 360px;
+        background: #fffdf5;
+        color: #123b25;
+        border-radius: 24px;
+        padding: 30px 22px;
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+    #musicBox .ball {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    #musicBox h2 {
+        margin: 5px 0 8px;
+        color: #075c2c;
+    }
+    #musicBox p {
+        margin: 0 0 20px;
+        color: #5d6c63;
+        line-height: 1.5;
+    }
+    #startMusic {
+        border: none;
+        width: 100%;
+        padding: 15px;
+        border-radius: 14px;
+        background: #087a39;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 </style>
 </head>
-
 <body>
-
-<div class="card">
-
-  <div class="ball">🏏 🏏</div>
-
-  <div class="small">YOU'RE INVITED TO</div>
-
-  <h1>BIRTHDAY<br>CELEBRATION</h1>
-
-  <div class="names">
-    IZHAAN <span class="and">&</span> AZLAN
-  </div>
-
-  <div class="subtitle">
-    🎉 Our Little Cricket Champs 🎉
-  </div>
-
-  <div class="cricket">
-    🏏 CRICKET THEME 🏏
-  </div>
-
-  <div class="details">
-    📅 <strong>24 October</strong><br>
-    🕖 <strong>7:00 PM</strong><br><br>
-
-    📍 <strong>Milton Memorial Arena</strong><br>
-    Milton Lions Club Hall<br>
-    2nd Floor
-  </div>
-
-  <div class="buttons">
-
-    <a
-      class="button rsvp"
-      href="https://forms.gle/4cu7HJAwqQkiePei7"
-      target="_blank">
-      💌 Confirm Attendance
-    </a>
-
-    <a
-      class="button location"
-      href="https://www.google.com/maps/search/?api=1&query=Milton+Memorial+Arena+Milton+Ontario"
-      target="_blank">
-      📍 View Location
-    </a>
-
-    <button class="music" onclick="playCricketMusic()">
-      🎵 Play Cricket Music
-    </button>
-
-  </div>
-
-  <div class="note">
-    Tap the music button to enjoy a little cricket-style birthday tune! 🏏🎵
-  </div>
-
-  <div class="footer">
-    We can't wait to celebrate with you! ❤️
-  </div>
-
-  <div class="grass">
-    🌿🏏🌿🏏🌿
-  </div>
-
+<!-- MUSIC START SCREEN -->
+<div id="musicOverlay">
+    <div id="musicBox">
+        <div class="ball">🏏🎵</div>
+        <h2>Welcome!</h2>
+        <p>Tap below to start the birthday cricket music 🎶</p>
+        <button id="startMusic">▶ Start Music</button>
+    </div>
 </div>
-
+<div class="card">
+    <div class="top">
+        <div class="small-title">YOU'RE INVITED TO</div>
+        <h1>
+            IZHAAN<br>
+            &<br>
+            AZLAN
+        </h1>
+        <div class="celebration">
+            BIRTHDAY CELEBRATION
+        </div>
+    </div>
+    <div class="content">
+        <div class="champ">
+            🏏 Our Little Cricket Champs 🏏
+        </div>
+        <p class="message">
+            Come join us for a fun-filled birthday celebration
+            with lots of cricket, laughter and happy moments! ❤️
+        </p>
+        <div class="details">
+            <div class="detail">
+                <strong>📅 Date</strong>
+                24 October
+            </div>
+            <div class="detail">
+                <strong>⏰ Time</strong>
+                7:00 PM
+            </div>
+            <div class="detail">
+                <strong>📍 Venue</strong>
+                Milton Memorial Arena
+            </div>
+            <div class="detail">
+                <strong>🏟️ Hall</strong>
+                Milton Lions Club Hall (2nd Floor)
+            </div>
+        </div>
+        <div class="buttons">
+            <a
+                class="button rsvp"
+                href="https://forms.gle/4cu7HJAwqQkiePei7"
+                target="_blank"
+            >
+                🎉 Confirm Attendance
+            </a>
+            <a
+                class="button location"
+                href="https://www.google.com/maps/search/?api=1&query=Milton+Memorial+Arena+Milton+Ontario"
+                target="_blank"
+            >
+                📍 View Location
+            </a>
+        </div>
+        <div class="footer">
+            We can't wait to celebrate with you! 🏏🎂❤️
+        </div>
+    </div>
+</div>
 <script>
 let audioContext;
-let playing = false;
-let timers = [];
-
-function playCricketMusic() {
-
-  if (playing) {
-    timers.forEach(t => clearTimeout(t));
-    playing = false;
-    return;
-  }
-
-  playing = true;
-
-  audioContext = new (window.AudioContext || window.webkitAudioContext)();
-
-  const notes = [
-    523.25, 659.25, 783.99, 659.25,
-    587.33, 698.46, 880.00, 783.99,
-    659.25, 783.99, 987.77, 783.99
-  ];
-
-  notes.forEach((freq, i) => {
-
-    const timer = setTimeout(() => {
-
-      if (!playing) return;
-
-      const osc = audioContext.createOscillator();
-      const gain = audioContext.createGain();
-
-      osc.type = "triangle";
-      osc.frequency.value = freq;
-
-      gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
-      gain.gain.exponentialRampToValueAtTime(
-        0.16,
-        audioContext.currentTime + 0.03
-      );
-
-      gain.gain.exponentialRampToValueAtTime(
-        0.0001,
-        audioContext.currentTime + 0.35
-      );
-
-      osc.connect(gain);
-      gain.connect(audioContext.destination);
-
-      osc.start();
-      osc.stop(audioContext.currentTime + 0.4);
-
-    }, i * 420);
-
-    timers.push(timer);
-  });
-
-  const repeat = setTimeout(() => {
-    playing = false;
-    playCricketMusic();
-  }, notes.length * 420 + 700);
-
-  timers.push(repeat);
+let musicTimer;
+let isPlaying = false;
+/*
+    Simple cheerful cricket-style birthday melody.
+    It is generated in the browser, so no separate music file
+    needs to be uploaded to GitHub.
+*/
+function startMusic() {
+    if (isPlaying) return;
+    isPlaying = true;
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+    }
+    const notes = [
+        392, 440, 494, 523,
+        494, 440, 392, 330,
+        392, 440, 494, 587,
+        523, 494, 440, 392
+    ];
+    let index = 0;
+    function playNote() {
+        if (!isPlaying) return;
+        const oscillator = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        oscillator.type = "triangle";
+        oscillator.frequency.value = notes[index];
+        gain.gain.setValueAtTime(0.0001, audioContext.currentTime);
+        gain.gain.exponentialRampToValueAtTime(
+            0.10,
+            audioContext.currentTime + 0.03
+        );
+        gain.gain.exponentialRampToValueAtTime(
+            0.0001,
+            audioContext.currentTime + 0.45
+        );
+        oscillator.connect(gain);
+        gain.connect(audioContext.destination);
+        oscillator.start();
+        oscillator.stop(audioContext.currentTime + 0.5);
+        index = (index + 1) % notes.length;
+        musicTimer = setTimeout(playNote, 500);
+    }
+    playNote();
 }
+function hideMusicScreen() {
+    document.getElementById("musicOverlay").classList.add("hidden");
+}
+document.getElementById("startMusic").addEventListener("click", function() {
+    startMusic();
+    hideMusicScreen();
+});
+/*
+   Try autoplay first.
+   iPhone Safari may block it; if blocked,
+   the Start Music screen remains visible.
+*/
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        try {
+            audioContext = new (
+                window.AudioContext ||
+                window.webkitAudioContext
+            )();
+            audioContext.resume().then(function() {
+                if (audioContext.state === "running") {
+                    startMusic();
+                    hideMusicScreen();
+                }
+            }).catch(function() {
+                // Safari blocked autoplay.
+            });
+        } catch (error) {
+            // User can tap Start Music.
+        }
+    }, 300);
+});
 </script>
-
 </body>
 </html>
