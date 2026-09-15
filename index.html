@@ -4,25 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Izhaan & Azlan - Birthday Invitation</title>
-
 <style>
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background:
-    radial-gradient(circle at top, #245c3b 0%, #0b2417 55%, #06140c 100%);
+  background: radial-gradient(circle at top, #245c3b, #07160d 70%);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
-
 .card {
   width: 100%;
   max-width: 520px;
@@ -32,66 +28,44 @@ body {
   padding: 35px 25px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(0,0,0,0.45);
-  position: relative;
-  overflow: hidden;
 }
-
-.card::before {
-  content: "🏏";
-  position: absolute;
-  font-size: 110px;
-  opacity: 0.08;
-  right: -15px;
-  top: 10px;
-  transform: rotate(-20deg);
-}
-
 .small {
   color: #f0d58a;
   letter-spacing: 4px;
   font-size: 13px;
   font-weight: bold;
 }
-
+.ball {
+  font-size: 50px;
+  margin: 15px 0;
+}
 h1 {
-  margin: 15px 0 5px;
+  margin: 5px 0;
   font-size: 42px;
-  line-height: 1.05;
   color: #f4d477;
   text-transform: uppercase;
 }
-
 h2 {
-  margin: 5px 0 25px;
-  font-size: 18px;
+  margin: 8px 0 25px;
+  font-size: 17px;
   letter-spacing: 3px;
   font-weight: normal;
 }
-
-.ball {
-  font-size: 55px;
-  margin: 5px 0 20px;
-}
-
 .message {
   font-size: 17px;
   line-height: 1.6;
-  margin-bottom: 25px;
 }
-
 .details {
   display: grid;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
-
 .detail {
   background: rgba(0,0,0,0.25);
   border: 1px solid rgba(217,180,91,0.5);
   border-radius: 16px;
   padding: 15px;
 }
-
 .label {
   color: #e7c96d;
   font-size: 12px;
@@ -99,100 +73,107 @@ h2 {
   letter-spacing: 2px;
   margin-bottom: 6px;
 }
-
 .value {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.4;
 }
-
-.location {
-  font-size: 16px;
-}
-
 .button {
   display: inline-block;
-  margin-top: 25px;
-  padding: 13px 25px;
+  margin-top: 22px;
+  padding: 14px 28px;
   border-radius: 30px;
   background: #d9b45b;
   color: #102719;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.2s;
+  font-size: 16px;
 }
-
-.button:hover {
-  transform: scale(1.04);
+.rsvp {
+  margin-top: 30px;
+  padding: 22px 15px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(217,180,91,0.5);
 }
-
+.rsvp h3 {
+  margin: 0 0 8px;
+  color: #f4d477;
+  font-size: 24px;
+}
+.rsvp p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.rsvp-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 30px;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #173b25;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
 .footer {
   margin-top: 25px;
   color: #d8d8d8;
   font-size: 13px;
 }
-
-.wicket {
-  margin-top: 18px;
-  font-size: 30px;
-  letter-spacing: 8px;
-}
 </style>
 </head>
-
 <body>
-
 <div class="card">
-
   <div class="small">YOU'RE INVITED</div>
-
   <div class="ball">🏏🏏</div>
-
   <h1>Izhaan &amp; Azlan</h1>
-
   <h2>BIRTHDAY CELEBRATION</h2>
-
   <p class="message">
     Come join us for a fun-filled birthday celebration
     with lots of cricket, laughter and happy moments!
   </p>
-
   <div class="details">
-
     <div class="detail">
       <div class="label">Date</div>
       <div class="value">24 October</div>
     </div>
-
     <div class="detail">
       <div class="label">Time</div>
       <div class="value">7:00 PM</div>
     </div>
-
     <div class="detail">
       <div class="label">Venue</div>
-      <div class="value location">
+      <div class="value">
         Milton Memorial Arena<br>
         Milton Lions Club Hall (2nd Floor)
       </div>
     </div>
-
   </div>
-
   <a
     class="button"
     href="https://www.google.com/maps/search/?api=1&query=Milton+Memorial+Arena+Milton+Ontario"
     target="_blank">
     📍 View Location
   </a>
-
-  <div class="wicket">🏏 🏏 🏏</div>
-
-  <div class="footer">
-    We can't wait to celebrate with you!
+  <div class="rsvp">
+    <h3>💌 RSVP</h3>
+    <p>
+      Please let us know if you can join us!
+      <br>
+      Kindly confirm your attendance.
+    </p>
+    <a
+      class="rsvp-button"
+      href="YOUR_GOOGLE_FORM_LINK_HERE"
+      target="_blank">
+      ✅ Confirm Attendance
+    </a>
   </div>
-
+  <div class="footer">
+    We can't wait to celebrate with you! 🏏🎉
+  </div>
 </div>
-
 </body>
 </html>
